@@ -5,13 +5,21 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 h2 {
-  color: #fff;
+  color: #333;
   /* font-size: '100px'; */
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 5px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
 
@@ -19,104 +27,98 @@ h2 {
   text-align: center;
 }
 
+.selected{
+  background: #8380b6;
+  color: #fff; 
+  padding: .25rem;
+  margin: .2rem;
+  /* background-image: linear-gradient(to right, #45f0df , #8380b6); */
+  border-radius: 20.5px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 5px;
+  border: 2px solid #8380b6;
+  text-align: center;
 
+}
 
-.card1,
-.card2,
-.card3,
-.card4,
-.card5,
-.card6 {
+.infoSection{
+  margin-top: 5%;
+  z-index: 1;
+  position: relative;
+}
+
+.emphasisText{
+  color: #8380b6; 
+  font-weight: 600;
+}
+
+.circleDiv{
   position: absolute;
-  border-radius: 5px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  will-change: transform;
+  background-image: linear-gradient(to bottom right, #45f0df , #8380b6);
+  border-radius: 50%;
+  left: 50%;
+  top: -30%;
+  z-index: 0;
+  height: 754px;
+  width: 754px;
+  overflow: hidden;
 }
 
-.card1 {
-  /* min-width: 60ch;
-  min-height: 60ch; */
-  width: 35ch;
-  height: 8ch;
-  max-width: 100ch;
-  max-height: 100ch;
-  top: 20%;
-  left: 3.5rem;
-  /* background-color: aquamarine; */
-  /* background-image: url(https://image.flaticon.com/icons/svg/119/119596.svg); */
+.circlePhoto{
+  display: flex;
+  align-items: right;
+  justify-content: right;
 }
 
+.linesBgTop{
+  width: 35%;
+  top: -40%;
+  left: 45%;
+  z-index: 0;
+  position: absolute;
+}
 
-.card2 {
-  width: 35ch;
-  height: 8ch;
-  max-width: 100ch;
-  max-height: 100ch;
-  right: 0rem;
+.linesBgBot{
+  width: 40%;
   top: 60%;
-  /* background-color: blueviolet; */
-  /* background-image: url(https://image.flaticon.com/icons/svg/789/789395.svg); */
-}
-
-.card3 {
-  width: 45ch;
-  height: 5ch;
-  max-width: 100ch;
-  max-height: 100ch;;
-  left: 2rem;
-  top: 30%;
-  z-index: 0;
-  background-color: #f84aa7;
-  
-  /* background-image: url(https://image.flaticon.com/icons/svg/414/414927.svg); */
-}
-
-.card4 {
-  width: 45ch;
-  height: 5ch;
-  max-width: 100ch;
-  max-height: 100ch;
-  right: 2rem;
-  top: 70%;
-  background-color: #3f88c5;
-  /* background-image: url(https://image.flaticon.com/icons/svg/789/789392.svg); */
-}
-
-.card5 {
-  width: 48ch;
-  height: 1ch;
-  max-width: 100ch;
-  max-height: 100ch;;
-  left: 1.9rem;
-  top: 34%;
+  left: -10%;
   z-index: 100;
-  background-color: #fff;
-  border-radius: 0px;
-  
-  /* background-image: url(https://image.flaticon.com/icons/svg/414/414927.svg); */
+  position: absolute;
 }
 
-.card6 {
-  width: 48ch;
-  height: 1ch;
-  max-width: 100ch;
-  max-height: 100ch;;
-  right: 1.9rem;
-  top: 74%;
-  z-index: 0;
-  background-color: #fff;
-  border-radius: 0px;
-  /* background-image: url(https://image.flaticon.com/icons/svg/789/789392.svg); */
+.buttonWrap {
+  width: 10rem;
+  margin: .5rem 1rem;
+  z-index: 2;
+  /* background-image: linear-gradient(to right, #45f0df , #8380b6); */
+  border-radius: 20.5px;
+  background: transparent;
+  color: #8380b6!important; 
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 4px;
+  border: 2px solid #8380b6;
+  text-align: center;
+  padding: .5rem 1.2rem;
 }
 
-.container {
+.buttonNav{
+  margin-top: 2%;
+}
+
+.buttonWrap:hover{
+  text-decoration: none;
+  color: #fff!important;
+  background-color: #8380b6;
+}
+
+
+
+.homeContainer {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   overflow: hidden;
 }
 
@@ -135,4 +137,7 @@ h2 {
 .App-link {
   color: #61dafb;
 }
+
+
+
 

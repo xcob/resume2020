@@ -1,53 +1,115 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
-import {useSpring, animated} from 'react-spring'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  //Link,
+  NavLink
+} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Nav, Navbar, Item, Button, Container, Row, Col, Image,  Link } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap'
+
+
+
 import './App.css';
 
 
-const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
-const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
 
+// This site has 3 pages, all of which are rendered
+// dynamically in the browser (not server rendered).
+//
+// Although the page does not ever refresh, notice how
+// React Router keeps the URL up to date as you navigate
+// through the site. This preserves the browser history,
+// making sure things like the back button and bookmarks
+// work properly.
 
-// const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`
- const trans3 = (x, y) => `translate3d(${x /  17}px,${y /  17}px,0)`
-// const trans4 = (x, y) => `translate3d(${x / 3.5}px,${y / 3.5}px,0)`
-
-function App() {
-  const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
+export default function App() {
   return (
-    <div class="container" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
-      <animated.div class="card1" style={{ transform: props.xy.interpolate(trans1) }}>
-      <h2 style={{ color: '#fff', fontSize: '5rem', zIndex: 4000}}>J<span>acob</span></h2>
-      </animated.div>
+    <Router>
+        <Navbar  expand="md" collapseOnSelect>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav>
+            <Nav.Link href="/home" defaultActiveKey="/home" to="/home"  className="buttonWrap">HOME</Nav.Link>
+            <Nav.Link to="/about"  href="/about" className="buttonWrap">ABOUT</Nav.Link>
+            <Nav.Link to="/projects"  href="https://github.com/xcob" className="buttonWrap">GITHUB</Nav.Link>
+         </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     
-      <animated.div class="card2" style={{ transform: props.xy.interpolate(trans1) }}>
-      <h2 style={{ color: '#fff', fontSize: '5rem', zIndex: 4000}}>S<span>mith</span></h2>
-      </animated.div>
-      <animated.div class="card5" style={{ transform: props.xy.interpolate(trans3) }}></animated.div>
-      <animated.div class="card3" style={{ transform: props.xy.interpolate(trans1) }}></animated.div>
-      <animated.div class="card4" style={{ transform: props.xy.interpolate(trans1) }}></animated.div>
-      <animated.div class="card6" style={{ transform: props.xy.interpolate(trans3) }}></animated.div>
-      <h1>About | Work | Projects</h1>
-    </div>
-  )
+        <Switch>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+        </Switch>
+    </Router>
+  );
 }
 
-  // function App() {
-  //   const props = useSpring({opacity: 1, from: {opacity: 0}})
+// You can think of these components as "pages"
+// in your app.
+
+function Home() {
+  return (
   
-  //   return (
-  //     <div className="App">
-  //       <header className="App-header">
-         
-  //         <animated.div style={props}>I will fade in</animated.div>
-  //         <p>
-  //           Edit <code>src/App.js</code> and save to reload.
-  //         </p>
-         
-  //       </header>
-  //     </div>
-  //   );
-  // }
+       <Container>
+          <Row>
+            <Col>
+              <div className="infoSection">
+                <h2>Hello!</h2>
+                <h3>I'm Jacob Smith</h3>
+                <h3>I'm a <span className="emphasisText">Web Developer</span> based out of Birmingham Alabama</h3>
+              </div>
+            </Col>
+          </Row>
+      
+      
+        <div className="circleDiv"></div>
+        <Image src="Lines.png" className="linesBgTop" roundedCircle fluid  />
+        <div >
+          <Col xs={{ span: 7, offset: 3 }} md={{ span: 6, offset: 4 }} lg={{ span: 4, offset: 4 }}>
+            <Image src="JacobSmith_circle.png" roundedCircle fluid  />
+          
+            
+          </Col>
+        </div>  
+       <div className="homeContainer">
+         <Image src="Lines.png" className="linesBgBot" roundedCircle fluid  />
+       </div>
+       </Container>
+      
+     
+   
+  );
+}
 
+function About() {
+  return (
+    <div>
+      <h2>About</h2>
+      <p>lorem </p>
+    </div>
+  );
+}
 
-export default App;
+function Projects() {
+  return (
+    <Container>
+      <Row>
+        <Col>1 of 2</Col>
+        <Col>2 of 2</Col>
+      </Row>
+      
+
+    </Container>
+    
+  );
+}
