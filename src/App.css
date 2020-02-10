@@ -55,6 +55,7 @@ ul {
   margin-top: 5%;
   z-index: 1;
   position: relative;
+  animation: infoFadeIn  1 .25s linear;
 }
 
 .emphasisText{
@@ -74,10 +75,8 @@ ul {
   overflow: hidden;
 }
 
-.circlePhoto{
-  display: flex;
-  align-items: right;
-  justify-content: right;
+.profile{
+  animation: profileFadeIn 1 .5s linear;
 }
 
 .linesBgTop{
@@ -86,6 +85,7 @@ ul {
   left: 45%;
   z-index: 0;
   position: absolute;
+  animation: linesSpin infinite 140s linear;
 }
 
 .linesBgBot{
@@ -94,6 +94,7 @@ ul {
   left: -10%;
   z-index: 100;
   position: absolute;
+  animation: linesSpin infinite 140s linear;
 }
 
 @media (max-width: 500px){
@@ -129,6 +130,86 @@ ul {
   background-color: #8380b6;
 }
 
+.aboutRow{
+  margin-top: 5%;
+}
+
+.techRow{
+  margin-top: 25%;
+}
+
+.HTMLDiv{
+  border-radius: 20px;
+  border: 1px #8380b6 solid;
+  height: 2rem;
+  position: relative;
+
+}
+
+.HTMLDiv > span{
+  background-image: linear-gradient(
+    to right,
+    #45f0df,
+    #8380b6
+  );
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  animation: progressBar100 1 .5s linear ;
+}
+
+.CSSDiv{
+  border-radius: 20px;
+  border: 1px #8380b6 solid;
+  height: 2rem;
+  position: relative;
+
+}
+
+.CSSDiv > span{
+  background-image: linear-gradient(
+    to right,
+    #45f0df,
+    #8380b6
+  );
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  animation: progressBar100 1 .5s linear ;
+}
+
+.JavascriptDiv{
+  border-radius: 20px;
+  border: 1px #8380b6 solid;
+  height: 2rem;
+  position: relative;
+  
+}
+
+.JavascriptDiv > span{
+  background-image: linear-gradient(
+    to right,
+    #45f0df,
+    #8380b6
+  );
+  width: 90%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  animation: progressBar90 1 .5s linear ;
+  
+}
+
+
+
 
 
 .homeContainer {
@@ -154,6 +235,85 @@ ul {
 
 .App-link {
   color: #61dafb;
+}
+
+
+@keyframes linesSpin {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes profileFadeIn {
+  0%  {
+    
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  }
+}
+
+@keyframes infoFadeIn {
+  0%  {
+    opacity: 0; 
+   
+  }
+
+  100% {
+    opacity: 1; 
+
+  }
+}
+
+@keyframes progressBar100 {
+  0%  {
+    width: 0%; 
+   
+  }
+
+  100% {
+    width: 100%; 
+
+  }
+}
+
+@keyframes progressBar90 {
+  0%  {
+    width: 0%; 
+   
+  }
+
+  100% {
+    width: 90%; 
+
+  }
+}
+@keyframes progressBar100 {
+  0%  {
+    width: 0%; 
+   
+  }
+
+  100% {
+    width: 100%; 
+
+  }
+}
+
+@keyframes progressBar100 {
+  0%  {
+    width: 0%; 
+   
+  }
+
+  100% {
+    width: 100%; 
+
+  }
 }
 
 

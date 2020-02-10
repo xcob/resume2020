@@ -95,9 +95,62 @@ function Home() {
 
 function About() {
   return (
+    <Container>
+    <Row className="aboutRow">
+      <Col xs={{ span: 12, offset: 0 }} md={{ span: 5, offset: 0 }} lg={{ span: 5, offset: 0 }}> 
+        <h2>About</h2>  
+        <h3>Web</h3>
+        <p>Words About me</p>
+        <p>Words About me</p>
+        <p>Words About me</p>
+        <p>Words About me</p>
+        <p>Words About me</p>
+      </Col>
+      <Col xs={{ span: 12, offset: 0 }} md={{ span: 7, offset: 0 }} lg={{ span: 7, offset: 0 }}> 
+        <Row className="techRow">
+          <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
+            <h3>HTML / CSS</h3>
+          </Col>
+          <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
+            <div className="HTMLDiv">  <span></span></div>
+          </Col>
+          <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
+            <h3>Javascript</h3>
+          </Col>
+          <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
+            <div className="JavascriptDiv">  <span></span></div>
+          </Col>
+          <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
+            <h3>PHP/Wordpress</h3>
+          </Col>
+          <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
+            <div className="JavascriptDiv">  <span></span></div>
+          </Col>
+          <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
+            <h3>React</h3>
+          </Col>
+          <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
+            <div className="JavascriptDiv">  <span></span></div>
+          </Col>
+          <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
+            <h3>React Native</h3>
+          </Col>
+          <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
+            <div className="JavascriptDiv">  <span></span></div>
+          </Col>
+          <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
+            <h3>Bootstrap/React Bootstrap</h3>
+          </Col>
+          <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
+            <div className="JavascriptDiv">  <span></span></div>
+          </Col>
+        </Row>
+      </Col>
+    </Row>
+    
     <div>
-      <h2>About</h2>
-      <div className="circleDiv"></div>
+     
+      {/* <div className="circleDiv"></div> */}
         <Image src="Lines.png" className="linesBgTop" roundedCircle fluid  />
         <div >
         
@@ -105,8 +158,11 @@ function About() {
        <div className="homeContainer">
          <Image src="Lines.png" className="linesBgBot" roundedCircle fluid  />
        </div>
-       <h3>Web Technologies</h3>
+      
     </div>
+
+  </Container>
+   
   );
 }
 
