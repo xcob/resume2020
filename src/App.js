@@ -40,7 +40,10 @@ export default function App() {
       </Navbar>
     
         <Switch>
-          <Route exact path="/home">
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route  path="/home">
             <Home />
           </Route>
           <Route path="/about">
@@ -94,7 +97,15 @@ function About() {
   return (
     <div>
       <h2>About</h2>
-      <p>lorem </p>
+      <div className="circleDiv"></div>
+        <Image src="Lines.png" className="linesBgTop" roundedCircle fluid  />
+        <div >
+        
+        </div>  
+       <div className="homeContainer">
+         <Image src="Lines.png" className="linesBgBot" roundedCircle fluid  />
+       </div>
+       <h3>Web Technologies</h3>
     </div>
   );
 }
