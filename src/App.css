@@ -96,6 +96,13 @@ ul {
   position: absolute;
 }
 
+@media (max-width: 500px){
+  .linesBgBot{
+    width: 90%;
+    left: 15%;
+  }
+}
+
 .buttonWrap {
   width: 8.5rem;
   margin: .5rem .5rem;
@@ -106,6 +113,7 @@ ul {
   color: #8380b6!important; 
   font-family: 'Poppins', sans-serif;
   letter-spacing: 4px;
+  font-size: 18px;
   border: 2px solid #8380b6;
   text-align: center;
   padding: .5rem 1.2rem;
