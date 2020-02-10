@@ -31,7 +31,7 @@ export default function App() {
         <Navbar  expand="md" collapseOnSelect>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav>
+          <Nav className="buttonNav">
             <Nav.Link href="/home" defaultActiveKey="/home" to="/home"  className="buttonWrap">HOME</Nav.Link>
             <Nav.Link to="/about"  href="/about" className="buttonWrap">ABOUT</Nav.Link>
             <Nav.Link to="/projects"  href="https://github.com/xcob" className="buttonWrap">GITHUB</Nav.Link>
@@ -62,24 +62,23 @@ function Home() {
   
        <Container>
           <Row>
-            <Col>
+            <Col xs={{ span: 5, offset: 0 }} md={{ span: 6, offset: 0 }} lg={{ span: 5, offset: 0 }}>
               <div className="infoSection">
-                <h2>Hello!</h2>
+                <h1 className="hello">Hello!</h1>
                 <h3>I'm Jacob Smith</h3>
                 <h3>I'm a <span className="emphasisText">Web Developer</span> based out of Birmingham Alabama</h3>
               </div>
             </Col>
+            <Col xs={{ span: 1, offset: 0 }} className="d-none d-md-block" md={{ span: 6, offset: 0 }} lg={{ span: 4, offset: 0 }}>
+                <Image className="profile" src="JacobSmith_circle.png" roundedCircle fluid  /> 
+              </Col>
           </Row>
       
       
         <div className="circleDiv"></div>
         <Image src="Lines.png" className="linesBgTop" roundedCircle fluid  />
         <div >
-          <Col xs={{ span: 7, offset: 3 }} md={{ span: 6, offset: 4 }} lg={{ span: 4, offset: 4 }}>
-            <Image src="JacobSmith_circle.png" roundedCircle fluid  />
-          
-            
-          </Col>
+        
         </div>  
        <div className="homeContainer">
          <Image src="Lines.png" className="linesBgBot" roundedCircle fluid  />
