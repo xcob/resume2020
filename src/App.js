@@ -67,7 +67,7 @@ function Home() {
             <Col xs={{ span: 10, offset: 0 }} md={{ span: 6, offset: 0 }} lg={{ span: 5, offset: 0 }}>
               <div className="infoSection">
                 <h1 className="hello">Hello!</h1>
-                <h3>My Name is Jacob Smith.</h3>
+                <h3>My name is Jacob Smith.</h3>
                 <h3>I'm a <span className="emphasisText">Software Engineer</span> based out of Birmingham, Alabama.</h3>
               </div>
             </Col>
