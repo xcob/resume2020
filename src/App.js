@@ -67,8 +67,8 @@ function Home() {
             <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }} lg={{ span: 5, offset: 0 }}>
               <div className="infoSection">
                 <h1 className="hello">Hello!</h1>
-                <h3>I'm Jacob Smith</h3>
-                <h3>I'm a <span className="emphasisText">Software Engineer</span> based out of Birmingham Alabama</h3>
+                <h3>My Name is Jacob Smith.</h3>
+                <h3>I'm a <span className="emphasisText">Software Engineer</span> based out of Birmingham, Alabama.</h3>
               </div>
             </Col>
             <Col xs={{ span: 1, offset: 0 }} className="d-none d-md-block" md={{ span: 6, offset: 0 }} lg={{ span: 4, offset: 0 }}>
@@ -99,10 +99,10 @@ function About() {
       <Col xs={{ span: 12, offset: 0 }} md={{ span: 5, offset: 0 }} lg={{ span: 5, offset: 0 }}> 
         <h2>About</h2>  
         
-        <p>I have been working in Birmingham for over a year helping solve real world problems for some of Birmingham's biggest clients.</p>
-        <p>When I'm not saving a local Birmingham business from utter disaster (read forgotten email password), I am chuggin along with my own projects, watching a hockey game, or experimenting in the kitchen.</p>
+        <p>I have been working in Birmingham for over a year helping solve real world problems for some of Birmingham's biggest organizations.</p>
+        <p>When I'm not saving a local business from utter disaster, I am chuggin along with my own projects, watching a hockey game, or experimenting in the kitchen.</p>
         <p>I developed a solid coding foundation at Jefferson State Community College, taking their Full Stack Web Development course over the summer of 2018.</p>
-        <p>Since then I have been working at Bell Media, handling everything from bugfixes and custom functionality to website launches and SEO integration.</p>
+        <p>Since then I have been working at Bell Media, handling anything from bugfixes and custom functionality to website launches and SEO integration.</p>
        
       </Col>
       <Col xs={{ span: 12, offset: 0 }} md={{ span: 6, offset: 0 }} lg={{ span: 6, offset: 0 }}> 
@@ -155,7 +155,7 @@ function About() {
     </Row>
     <Row>
       <Col xs={{ span: 12, offset: 0 }}>
-        <p> <span className="emphasisText">Workflow:</span> Slack - VSCode - CloudFlare - Google Suite - CyberDuck - ConnectWise - Expo</p>
+        <p> <span className="emphasisText">Slack - VSCode - CloudFlare - Google Suite - CyberDuck - ConnectWise - Expo</span> </p>
       </Col>
     </Row>
     
