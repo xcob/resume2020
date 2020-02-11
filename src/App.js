@@ -78,11 +78,11 @@ function Home() {
       
       
         <div className="circleDiv"></div>
-        <Image src="Lines.png" className="linesBgTop" roundedCircle fluid  />
+          <Image src="Lines.png" className="linesBgTop" roundedCircle fluid  />
         <div >
         
         </div>  
-       <div className="" stylw={{ overflow: 'hidden'}}>
+       <div className="" style={{ overflow: 'hidden'}}>
          <Image src="Lines.png" className="linesBgBot" roundedCircle fluid  />
        </div>
        </Container>
