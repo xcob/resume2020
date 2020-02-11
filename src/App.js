@@ -64,7 +64,7 @@ function Home() {
   
        <Container >
           <Row>
-            <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }} lg={{ span: 5, offset: 0 }}>
+            <Col xs={{ span: 10, offset: 0 }} md={{ span: 6, offset: 0 }} lg={{ span: 5, offset: 0 }}>
               <div className="infoSection">
                 <h1 className="hello">Hello!</h1>
                 <h3>My Name is Jacob Smith.</h3>
