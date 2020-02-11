@@ -93,6 +93,8 @@ ul {
 
 .profile{
   animation: profileFadeIn 1 .5s linear;
+  margin-top: 28%;
+  margin-left: 25%;
 }
 
 .linesBgTop{
