@@ -57,23 +57,22 @@ export default function App() {
   );
 }
 
-// You can think of these components as "pages"
-// in your app.
+
 
 function Home() {
   return (
   
-       <Container>
+       <Container >
           <Row>
-            <Col xs={{ span: 5, offset: 0 }} md={{ span: 6, offset: 0 }} lg={{ span: 5, offset: 0 }}>
+            <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }} lg={{ span: 5, offset: 0 }}>
               <div className="infoSection">
                 <h1 className="hello">Hello!</h1>
                 <h3>I'm Jacob Smith</h3>
-                <h3>I'm a <span className="emphasisText">Web Developer</span> based out of Birmingham Alabama</h3>
+                <h3>I'm a <span className="emphasisText">Software Engineer</span> based out of Birmingham Alabama</h3>
               </div>
             </Col>
             <Col xs={{ span: 1, offset: 0 }} className="d-none d-md-block" md={{ span: 6, offset: 0 }} lg={{ span: 4, offset: 0 }}>
-                <Image className="profile" src="JacobSmith_circle.png" roundedCircle fluid  /> 
+                <Image className="profile" src="JacobSmith_circlelines.png" roundedCircle fluid  /> 
               </Col>
           </Row>
       
@@ -83,7 +82,7 @@ function Home() {
         <div >
         
         </div>  
-       <div className="homeContainer">
+       <div className="" stylw={{ overflow: 'hidden'}}>
          <Image src="Lines.png" className="linesBgBot" roundedCircle fluid  />
        </div>
        </Container>
@@ -99,14 +98,14 @@ function About() {
     <Row className="aboutRow">
       <Col xs={{ span: 12, offset: 0 }} md={{ span: 5, offset: 0 }} lg={{ span: 5, offset: 0 }}> 
         <h2>About</h2>  
-        <h3>Web</h3>
-        <p>Words About me</p>
-        <p>Words About me</p>
-        <p>Words About me</p>
-        <p>Words About me</p>
-        <p>Words About me</p>
+        
+        <p>I have been working in Birmingham for over a year helping solve real world problems for some of Birmingham's biggest clients.</p>
+        <p>When I'm not saving a local Birmingham business from utter disaster (read forgotten email password), I am chuggin along with my own projects, watching a hockey game, or experimenting in the kitchen.</p>
+        <p>I developed a solid coding foundation at Jefferson State Community College, taking their Full Stack Web Development course over the summer of 2018.</p>
+        <p>Since then I have been working at Bell Media, handling everything from bugfixes and custom functionality to website launches and SEO integration.</p>
+       
       </Col>
-      <Col xs={{ span: 12, offset: 0 }} md={{ span: 7, offset: 0 }} lg={{ span: 7, offset: 0 }}> 
+      <Col xs={{ span: 12, offset: 0 }} md={{ span: 6, offset: 0 }} lg={{ span: 6, offset: 0 }}> 
         <Row className="techRow">
           <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
             <h3>HTML / CSS</h3>
@@ -118,33 +117,45 @@ function About() {
             <h3>Javascript</h3>
           </Col>
           <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
-            <div className="JavascriptDiv">  <span></span></div>
+            <div className="HTMLDiv">  <span></span></div>
           </Col>
           <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
-            <h3>PHP/Wordpress</h3>
+            <h3>Wordpress</h3>
+          </Col>
+          <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
+            <div className="HTMLDiv">  <span></span></div>
+          </Col>
+          <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
+            <h3>PHP/MySQL</h3>
           </Col>
           <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
             <div className="JavascriptDiv">  <span></span></div>
+          </Col>
+          <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
+            <h3>Bootstrap/Materialize</h3>
+          </Col>
+          <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
+            <div className="JavascriptDiv">  <span></span></div>
+          </Col>
+          <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
+            <h3>DNS Management</h3>
+          </Col>
+          <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
+            <div className="dnsDiv">  <span></span></div>
           </Col>
           <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
             <h3>React</h3>
           </Col>
           <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
-            <div className="JavascriptDiv">  <span></span></div>
+            <div className="reactDiv">  <span></span></div>
           </Col>
-          <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
-            <h3>React Native</h3>
-          </Col>
-          <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
-            <div className="JavascriptDiv">  <span></span></div>
-          </Col>
-          <Col xs={{ span: 12, offset: 0 }}  md={{ span: 6, offset: 0 }}>
-            <h3>Bootstrap/React Bootstrap</h3>
-          </Col>
-          <Col xs={{ span: 8, offset: 0 }} md={{ span: 6, offset: 0 }}>
-            <div className="JavascriptDiv">  <span></span></div>
-          </Col>
+         
         </Row>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={{ span: 12, offset: 0 }}>
+        <p> <span className="emphasisText">Workflow:</span> Slack - VSCode - CloudFlare - Google Suite - CyberDuck - ConnectWise - Expo</p>
       </Col>
     </Row>
     
@@ -152,10 +163,8 @@ function About() {
      
       {/* <div className="circleDiv"></div> */}
         <Image src="Lines.png" className="linesBgTop" roundedCircle fluid  />
-        <div >
-        
-        </div>  
-       <div className="homeContainer">
+       
+       <div className="">
          <Image src="Lines.png" className="linesBgBot" roundedCircle fluid  />
        </div>
       

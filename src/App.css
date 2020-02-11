@@ -6,8 +6,12 @@ body,
   margin: 0;
   padding: 0;
   background-color: #fff;
-  overflow: hidden;
+ 
   font-family: 'Poppins', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 h2 {
@@ -56,6 +60,11 @@ ul {
   z-index: 1;
   position: relative;
   animation: infoFadeIn  1 .25s linear;
+  font-size: 2rem;
+}
+
+.infoSection > h3{
+  font-size: 1.55rem;
 }
 
 .emphasisText{
@@ -86,6 +95,7 @@ ul {
   z-index: 0;
   position: absolute;
   animation: linesSpin infinite 140s linear;
+  overflow: hidden;
 }
 
 .linesBgBot{
@@ -95,6 +105,7 @@ ul {
   z-index: 100;
   position: absolute;
   animation: linesSpin infinite 140s linear;
+  overflow: hidden;
 }
 
 @media (max-width: 500px){
@@ -136,6 +147,12 @@ ul {
 
 .techRow{
   margin-top: 25%;
+  padding-bottom: 5%;
+}
+
+.techRow h3 {
+  font-size: 1.55rem;
+  margin-top: 2px;
 }
 
 .HTMLDiv{
@@ -208,7 +225,50 @@ ul {
   
 }
 
+.dnsDiv{
+  border-radius: 20px;
+  border: 1px #8380b6 solid;
+  height: 2rem;
+  position: relative;
+  
+}
 
+.dnsDiv > span {
+  background-image: linear-gradient(
+    to right,
+    #45f0df,
+    #8380b6
+  );
+  width: 75%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  animation: progressBar75 1 .5s linear ;
+}
+
+.reactDiv{
+  border-radius: 20px;
+  border: 1px #8380b6 solid;
+  height: 2rem;
+  position: relative;
+}
+
+.reactDiv > span {
+  background-image: linear-gradient(
+    to right,
+    #45f0df,
+    #8380b6
+  );
+  width: 70%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  animation: progressBar70 1 .5s linear ;
+}
 
 
 
@@ -292,29 +352,42 @@ ul {
 
   }
 }
-@keyframes progressBar100 {
+@keyframes progressBar80 {
   0%  {
     width: 0%; 
    
   }
 
   100% {
-    width: 100%; 
+    width: 80%; 
 
   }
 }
 
-@keyframes progressBar100 {
+@keyframes progressBar75 {
   0%  {
     width: 0%; 
    
   }
 
   100% {
-    width: 100%; 
+    width: 75%; 
 
   }
 }
+
+@keyframes progressBar70 {
+  0%  {
+    width: 0%; 
+   
+  }
+
+  100% {
+    width: 70%; 
+
+  }
+}
+
 
 
 
