@@ -7,8 +7,11 @@ import {
   NavLink
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav, Navbar, Item, Button, Container, Row, Col, Image,  Link } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap'
+import { Nav, Navbar, Item, Button, Container, Row, Col, Image } from 'react-bootstrap';
+import { FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
+import { LinkContainer } from 'react-router-bootstrap';
+import   ContactForm  from './Contact.js';
+import * as emailjs from 'emailjs-com';
 
 
 
@@ -34,7 +37,8 @@ export default function App() {
           <Nav className="buttonNav">
             <Nav.Link href="/home" defaultActiveKey="/home" to="/home"  className="buttonWrap">HOME</Nav.Link>
             <Nav.Link to="/about"  href="/about" className="buttonWrap">ABOUT</Nav.Link>
-            <Nav.Link to="/projects"  href="https://github.com/xcob" target="_blank" className="buttonWrap">GITHUB</Nav.Link>
+            <Nav.Link to="/contact"  href="/contact" className="buttonWrap">CONTACT</Nav.Link>
+            <Nav.Link to="/"  href="https://github.com/xcob" target="_blank" className="buttonWrap">GITHUB</Nav.Link>
          </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -49,8 +53,8 @@ export default function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/projects">
-            <Projects />
+          <Route path="/contact">
+            <ContactForm />
           </Route>
         </Switch>
     </Router>
@@ -175,16 +179,3 @@ function About() {
   );
 }
 
-function Projects() {
-  return (
-    <Container>
-      <Row>
-        <Col>1 of 2</Col>
-        <Col>2 of 2</Col>
-      </Row>
-      
-
-    </Container>
-    
-  );
-}

@@ -148,6 +148,7 @@ ul {
   text-decoration: none;
   color: #fff!important;
   background-color: #8380b6;
+  border: 2px solid #8380b6;
 }
 
 .aboutRow{
