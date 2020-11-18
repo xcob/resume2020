@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import * as emailjs from 'emailjs-com'
 import 'bootstrap/dist/css/bootstrap.min.css'
 //import Layout from '../components/layout'
-import { Nav, Navbar, Item, Button, Container, Row, Col, Image } from 'react-bootstrap';
-import { FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
+import { Button, Container } from 'react-bootstrap';
+import { Form, FormGroup, Input } from 'reactstrap'
 
 
 

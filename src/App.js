@@ -7,11 +7,11 @@ import {
   NavLink
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav, Navbar, Item, Button, Container, Row, Col, Image } from 'react-bootstrap';
-import { FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
-import { LinkContainer } from 'react-router-bootstrap';
+import { Nav, Navbar, Container, Row, Col, Image } from 'react-bootstrap';
+//import { FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
+//import { LinkContainer } from 'react-router-bootstrap';
 import   ContactForm  from './Contact.js';
-import * as emailjs from 'emailjs-com';
+//import * as emailjs from 'emailjs-com';
 
 
 
