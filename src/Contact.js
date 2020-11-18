@@ -42,7 +42,6 @@ class ContactForm extends Component  {
       this.setState({
         name: '',
         email: '',
-        subject: '',
         message: '',
       })
     }
@@ -76,16 +75,6 @@ class ContactForm extends Component  {
                   placeholder="Email"
                 />
               </FormGroup>
-              <FormGroup controlId="formBasicSubject">  
-                <Input
-                  type="text"
-                  name="subject"
-                  className="text-primary"
-                  value={this.state.subject}
-                  onChange={this.handleChange.bind(this, 'subject')}
-                  placeholder="Subject"
-                />
-              </FormGroup>
               <FormGroup controlId="formBasicMessage">
                 <Input
                   type="textarea"
@@ -93,7 +82,7 @@ class ContactForm extends Component  {
                   className="text-primary"
                   value={this.state.message}
                   onChange={this.handleChange.bind(this, 'message')}
-                  placeholder="Message"
+                  placeholder="What can I do for you?"
                 />
               </FormGroup>
               <Button variant="primary"  className="buttonWrap" type="submit">
