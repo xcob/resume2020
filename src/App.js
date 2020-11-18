@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
   //Link,
-  NavLink
+
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar, Container, Row, Col, Image } from 'react-bootstrap';

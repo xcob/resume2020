@@ -21,7 +21,8 @@ class ContactForm extends Component  {
       const { name, email, subject, message } = this.state    
       
       let templateParams = {
-        from_name: email,
+        from_name: name,
+        from_email: email,
         to_name: 'jacobxxsmith@gmail.com',
         subject: subject,
         message_html: message,
