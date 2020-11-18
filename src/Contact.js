@@ -24,7 +24,6 @@ class ContactForm extends Component  {
         from_name: name,
         from_email: email,
         to_name: 'jacobxxsmith@gmail.com',
-        subject: subject,
         message_html: message,
        }     
        
