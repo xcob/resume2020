@@ -103,10 +103,11 @@ function About() {
       <Col xs={{ span: 12, offset: 0 }} md={{ span: 5, offset: 0 }} lg={{ span: 5, offset: 0 }}> 
         <h2>About</h2>  
         
-        <p>I have been working in Birmingham for over a year helping solve real world problems for some of Birmingham's biggest organizations.</p>
-        <p>When I'm not saving a local business from utter disaster, I am chuggin' along with my own projects, watching a hockey game, or experimenting in the kitchen.</p>
+        <p>I have been working in Birmingham for over two years helping solve real world problems for some of Birmingham's largest organizations.</p>
+        <p>When I'm not saving a local business from utter disaster, I am chuggin' along with my own projects, playing hockey, or experimenting in the kitchen.</p>
         <p>I developed a solid coding foundation at Jefferson State Community College, taking their Full Stack Web Development course over the summer of 2018.</p>
-        <p>Since then I have been working at Bell Media, handling anything from bugfixes and custom functionality to website launches and SEO integration.</p>
+        <p>Since then I have worked at Bell Media, handling anything from bugfixes and custom functionality to website launches and SEO integration.</p>
+        <p>And now I'm the full time Web Developer for ADTRAV Travel Management, working to satisfy customers all over the globe.</p>
        
       </Col>
       <Col xs={{ span: 12, offset: 0 }} md={{ span: 6, offset: 0 }} lg={{ span: 6, offset: 0 }}> 
