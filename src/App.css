@@ -130,7 +130,7 @@ ul {
   z-index: 2;
   /* background-image: linear-gradient(to right, #45f0df , #8380b6); */
   border-radius: 20.5px;
-  background: transparent;
+  background-color: #fff;
   color: #8380b6!important; 
   font-family: 'Poppins', sans-serif;
   letter-spacing: 4px;
